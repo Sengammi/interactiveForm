@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RENT My Profiles</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <ul class="steps">
+
+        </ul>
+        <form id="form" class="form-wrapper" method="post" onsubmit="return false">
+            <fieldset class="section is-active">
+                <div class="content">
+                    <h3><strong>YOUR INFORMATION WILL NEVER BE SHARED, SOLD OR GIVEN AWAY. EVERYTHING YOU ENTER HERE GOES TO RENTMYPROFILES.COM AND NO WHERE ELSE. WOULD YOU LIKE TO CONTINUE.</strong> </h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="continue" id="continue-yes" value="Yes">
+                            <label for="continue-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="continue" id="continue-no" value="No">
+                            <label for="continue-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>What is your first and last name?</h3>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>What is Your Cell Phone Number? <samp>*required*</samp></h3>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>What form of payment would you like? (USDT, BTC, ETH, BNB)?</h3>
+                    <input type="text" name="payment" id="payment" placeholder="Payment">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Would you be comfortable giving a username and password to login to Your account?</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="facebook-login" id="facebook-login-yes" value="Yes">
+                            <label for="facebook-login-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="facebook-login" id="facebook-login-no" value="No">
+                            <label for="facebook-login-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Would you be willing to give phone number just in case we need to get a verification code to login?</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="verification-code" id="verification-code-yes" value="Yes">
+                            <label for="verification-code-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="verification-code" id="verification-code-no" value="No">
+                            <label for="verification-code-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>How long have you had your profile for?</h3>
+                    <input type="text" name="profile-age" id="profile-age" placeholder="One year">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>If Your account requires “Identification” would you be able to and willing to provide identification (if needed).</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="identification" id="identification-yes" value="Yes">
+                            <label for="identification-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="identification" id="identification-no" value="No">
+                            <label for="identification-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Have you EVER used Your Account to advertise before?</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="advertise-facebook" id="advertise-facebook-yes" value="Yes">
+                            <label for="advertise-facebook-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="advertise-facebook" id="advertise-facebook-no" value="No">
+                            <label for="advertise-facebook-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Have you ever promoted anything illegal (we don’t want to work with anyone who’s profile promotes illegal material, we also don’t do anything with politics or anything illegal).</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="illegal" id="illegal-yes" value="Yes">
+                            <label for="illegal-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="illegal" id="illegal-no" value="No">
+                            <label for="illegal-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Is it okay to text you when we need your help with your profile and what is the best number to text you on?</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="message-you" id="message-you-yes" value="Yes">
+                            <label for="message-you-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="message-you" id="message-you-no" value="No">
+                            <label for="message-you-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>When would you like to get started?</h3>
+                    <input type="text" name="started" id="started" placeholder="Right now">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Please provide us with the URL of your profile so we can check if you are a real profile. Thank you.</h3>
+                    <input type="url" name="profile-url" id="profile-url" placeholder="https://facebook.com/">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Is your profile from the UK?</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="usa-profile" id="usa-profile-yes" value="Yes">
+                            <label for="usa-profile-yes">
+                                <h4>Yes</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="usa-profile" id="usa-profile-no" value="No">
+                            <label for="usa-profile-no">
+                                <h4>No</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>What region do you live in?</h3>
+                    <input type="text" name="region" id="region" placeholder="Region">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>What town do you live in?</h3>
+                    <input type="text" name="town" id="town" placeholder="Town">
+                    <div class="button">Next</div>
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>Please text +1-800-716-9856 to confirm you read and agreed to everything. If you don’t text then you’ll automatically be disqualified.</h3>
+                    <div class="row cf">
+                        <div class="six col">
+                            <input type="radio" name="text-on-number" id="text-on-number-done" value="Done">
+                            <label for="text-on-number-done">
+                                <h4>Done</h4>
+                            </label>
+                        </div>
+                        <div class="six col">
+                            <input type="radio" name="text-on-number" id="text-on-number-disqualified" value="Auto Disqualified">
+                            <label for="text-on-number-disqualified">
+                                <h4>I DIDN'T DO THIS (Auto Disqualified)</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <input class="submit button" type="submit" value="Submit">
+                </div>
+            </fieldset>
+            <fieldset class="section">
+                <div class="content">
+                    <h3>RENT My Profiles</h3>
+                    <p>Thank you, we will be in touch with you very soon!</p>
+                    <div class="button">Thank You Very Much!</div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./code.js"></script>
+</html>
